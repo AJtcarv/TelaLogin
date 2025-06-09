@@ -11,11 +11,13 @@ layout = [
 
 janela = sg.Window('Tela de login', layout)
 
-def VerificacaoDeSenha(self, Usuario, Senha):
-    while True:
-        eventos, valores = janela.read()
-        if eventos == sg.WINDOW_CLOSED:
-            break
-        if eventos == 'Entrar':
-            if valores['Usuario'] == 'boy' and valores['Senha'] == '123':
-                print(f'Bem vindo {valores['Usuario']}')
+
+while True:
+    eventos, valores = janela.read()
+    if eventos == sg.WINDOW_CLOSED:
+        break
+    if eventos == 'Entrar':
+        if valores['Usuario'] == 'boy' and valores['Senha'] == '123':
+            print(f'Bem vindo {valores['Usuario']}')
+
+
