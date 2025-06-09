@@ -4,7 +4,7 @@ sg.theme('Reddit')
 
 layout = [
     [sg.Text('Usuario'), sg.Input(key='Usuario')],
-    [sg.Text('Senha'), sg.Input(password_char='*',key='senha' )],
+    [sg.Text('Senha'), sg.Input(password_char='*',key='Senha' )],
     [sg.Checkbox('Salvar login?')],
     [sg.Button('Entrar')]
 ]
