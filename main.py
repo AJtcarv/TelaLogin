@@ -9,3 +9,5 @@ layout = [
     [sg.Button('Entrar')]
 ]
 
+janela = sg.Window('Tela de login', layout)
+
