@@ -6,5 +6,6 @@ layout = [
     [sg.text('Usuario'), sg.Input(key='Usuario')],
     [sg.text('Senha'), sg.Input(key='senha',password_char='*')],
     [sg.Checkbox('Salvar login?')]
-    
+    [sg.Button('Entrar')]
 ]
+
