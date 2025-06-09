@@ -4,7 +4,7 @@ sg.theme('Reddit')
 
 layout = [
     [sg.Text('Usuario'), sg.Input(key='Usuario')],
-    [sg.Text('Senha'), sg.Input(key='senha',password_char='*')],
+    [sg.Text('Senha'), sg.Input(password_char='*',key='senha' )],
     [sg.Checkbox('Salvar login?')],
     [sg.Button('Entrar')]
 ]
@@ -19,5 +19,7 @@ while True:
     if eventos == 'Entrar':
         if valores['Usuario'] == 'boy' and valores['Senha'] == '123':
             print(f'Bem vindo {valores['Usuario']}')
+        else:
+            print('Senha ou Usuario incorretos! ')
 
 
